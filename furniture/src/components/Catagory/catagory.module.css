@@ -1,0 +1,65 @@
+:root{
+    --text-color:rgb(34, 37, 43);
+    --bc-color: rgb(29, 25, 25);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.collaction{
+    margin: 100px 0px 10px 0px;
+}
+.container{
+    padding: 10px 13px;
+}
+
+.container .title{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 10px 0px;
+}
+
+.card{
+    height: 300px;
+    background-color: rgb(232, 227, 227);
+    margin:10px 0px;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: rgb(10, 61, 133);
+    
+}
+
+.link i{
+    margin: 0px 6px;
+}
+
+.link:hover{
+    text-decoration:underline;
+    color: rgb(146, 105, 17);
+}
+
+@media (max-width:600px) {
+    .container .title{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:500px) {
+    .container .title{
+        font-size: 2rem;
+        text-align: center;
+    }
+}

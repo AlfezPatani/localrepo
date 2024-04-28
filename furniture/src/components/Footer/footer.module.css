@@ -1,0 +1,47 @@
+footer{
+    background-color:#1D232F;
+    min-height: 310px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+footer h2{
+    font-size: 2.3rem;
+    color: whitesmoke;
+}
+footer p{
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.social a{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+.social a i{
+    font-size: 1.5rem;
+}
+
+@media (max-width:460px) {
+    footer h2{
+        font-size: 1.5rem;
+        color: whitesmoke;
+    }
+    .social a i{
+        font-size: 1.2rem;
+    }
+}
