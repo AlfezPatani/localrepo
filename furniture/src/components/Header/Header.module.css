@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,11 +7,11 @@
 
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
@@ -32,33 +34,39 @@ a{
     z-index: 9999;
 }
 
-.itemContainer{
+.itemContainer {
     display: flex;
     justify-self: center;
     align-items: center;
     gap: 10px;
-    height:100%
+    height: 100%
 }
 
 .logo {
     width: 200px;
     height: 100%;
-    background: rgb(179, 170, 170);
+    /* background: rgb(179, 170, 170); */
     margin: 0px 40px 0px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px;
+    ;
 
 }
 
-.logo img,span {
-
+.logo img,
+span {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.4rem;
+    text-transform: capitalize;
 }
 
 
 
-.headerItemCollaction{
+.headerItemCollaction {
     width: 80%;
     height: 100%;
     display: flex;
@@ -75,15 +83,16 @@ a{
     padding: 5px;
     cursor: pointer;
     position: relative;
-    
+
 }
 
 
-.mlf5{
+.mlf5 {
     margin: 0px 5px;
 }
 
-.header i,a{
+.header i,
+a {
     transition: all 600ms ease-in-out;
 }
 
@@ -131,21 +140,21 @@ a{
     color: rgb(215, 225, 225);
 }
 
-.bar{
+.bar {
     display: none;
     margin: 0px 6px;
 }
 
-.bar i{
+.bar i {
     margin: 0px 20px;
-    
+
 }
 
-.bar i:hover{
+.bar i:hover {
     color: rgb(97, 95, 95);
 }
 
-.fullContainer{
+.fullContainer {
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -154,7 +163,7 @@ a{
     z-index: 10000;
 }
 
-.sidebar{
+.sidebar {
     width: 400px;
     height: 100%;
     background: #ffffff;
@@ -165,10 +174,10 @@ a{
     flex-direction: column;
     gap: 10px;
     animation: Slider 200ms ease-in-out forwards;
-    
+
 }
 
-.sidebar .closebtn{
+.sidebar .closebtn {
     color: rgb(67, 57, 57);
     width: 100%;
     height: 30px;
@@ -179,12 +188,12 @@ a{
 }
 
 
-.sidebar .closebtn i:hover{
+.sidebar .closebtn i:hover {
     color: gray;
 }
 
-@keyframes Slider{
-    0%{
+@keyframes Slider {
+    0% {
         transform: translateX(100%);
     }
 }
@@ -209,7 +218,7 @@ a{
 }
 
 
-.fcolor{
+.fcolor {
     color: rgb(40, 30, 30);
     transition: all 600ms ease-in-out;
 }
@@ -219,25 +228,34 @@ a{
 /*responsive*/
 
 @media(max-width : 1200px) {
-    .header{
+    .header {
         justify-content: center;
     }
-    .headerItemCollaction{
+
+    .itemContainer{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .headerItemCollaction {
         display: none;
     }
-    .bar{
+
+    .bar {
         display: block;
     }
-    .logo{
+
+    .logo {
         margin: 0;
 
     }
-    
+
 }
+
 @media(max-width : 492px) {
-    .itemContainer{
-        gap:2px;
-        
+    .itemContainer {
+        gap: 2px;
+
     }
 
     .lang {
@@ -245,27 +263,31 @@ a{
         margin: 0px;
     }
 
-    .itemContainer{
+    .itemContainer {
         gap: 0px;
     }
+
     .logo {
         width: 150px;
         margin: 0px;
-    
+
     }
 }
+
 @media(max-width : 395px) {
-    .sidebar{
+    .sidebar {
         padding: 0px 0px 0px 40px;
     }
-    .sidebar .closebtn{
-       
+
+    .sidebar .closebtn {
+
         margin: 10px 0px 0px 0px;
     }
+
     .logo {
         width: 150px;
         height: 100%;
-    
+
     }
-    
+
 }

@@ -7,33 +7,22 @@ function Contact() {
 
     return (
         <div className={style.contactContainer}>
-            <h2>{contactData["headeTitle"+i18n.language]}</h2>
+            <h2>{contactData["headeTitle" + i18n.language]}</h2>
             <div className={style.boxContainer}>
                 {/*-------mapping contact data*/}
                 {contactData[i18n.language].map((elem) => {
                     return (
                         <div className={style.box} key={elem.title}>
+
                             
-                            <div className={style.icon}>
-                                <i className="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                            <h3 className={style.title}>
-                                {elem?.title}
-                            </h3>
-                            <div className={style.main}>
-                                
-                                {elem.detail.map((data) => {
-                                    return (
-                                        <div key={Math.random()*Math.random()}>
-                                             <p className={style?.line1}>{data?.line1}</p>
-                                             <p className={style.line2}>{data?.line2}</p>
-                                        </div>
-                                    )
-                                } )}
-                                
-                            </div>
-                            </div>
+                                <h3 className={style.title}>
+                                    {elem?.title}
+                                </h3>
+                                {elem.person?<div className={style.person}>{elem.person}</div>:''}
+                                <div className={style.main}>
+                                    {elem.text}
+                                </div>
+                            
 
                         </div>
                     )

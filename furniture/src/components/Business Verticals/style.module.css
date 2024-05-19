@@ -11,6 +11,7 @@
     margin: 10px 0px 20px 0px;
     font-size: 1.5rem;
     text-align: center;
+    font-family: var(--afacad);
 }
 
 .colunm{
@@ -65,6 +66,7 @@
 .ServiceWrapper h2{
     text-align: center;
     color: #121110;
+    font-family: var(--afacad);
 }
 
 
@@ -124,7 +126,17 @@
         gap: 20px;
 
     }
+
+    .ServicesBox{
+        width: 90%;
+       
+    }
+    .ServicesBox img{
+        height: 300px;
+    }
 }
+
+
 
 
 

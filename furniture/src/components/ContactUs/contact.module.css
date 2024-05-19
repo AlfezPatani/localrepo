@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Jura:wght@300..700&family=Major+Mono+Display&family=Nothing+You+Could+Do&display=swap');
 :root{
     --text-color:rgb(34, 37, 43);
     --bc-color: rgb(29, 25, 25);
+    --afacad: "Afacad", sans-serif;
+    --major-mono:"Major Mono Display", monospace;
+    --jura:font-family: "Jura", sans-serif;
 }
 
 .contactContainer{
@@ -18,35 +24,27 @@
     text-transform: capitalize;
     text-align: center;
     font-size: 3rem;
-    
+    font-family: var(--afacad);
+
 }
 
 .boxContainer{
     display: flex;
     justify-content: center;
     padding: 40px 10px;
+    gap: 10px;
 }
 
 .box{
     width: 400px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 5px;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+    font-family: var(--afacad);
 }
 
-.box .icon{
-    height: 70px;
-    width: 70px;
-    background-color: var(--bc-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 2rem;
-    color: white;
-}
+
 
 
 
@@ -55,29 +53,25 @@
     font-size: 1.4rem;
     color:var(--text-color) ;
     font-weight: bolder;
-    text-align: center;
 }
-
-.box .main{
+.person{
+    margin-top:15px;
+    font-size: 1.4rem;
+    font-family: var(--jura);
+}
+.main{
+    margin-top: 6px;
     color: rgb(44, 44, 44);
-    text-align: center;
-}
-
-.box .main .line1{
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-
-.box .main .line2{
     font-size: 1.2rem;
-    margin-top: 3px;
+    width: 100%;
 }
+
 
 @media (max-width:1000px) {
     .boxContainer{
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap: 10px;
     }
 }
 
@@ -86,16 +80,31 @@
         font-size: 2.3rem;
         
     }
-    .box .icon{
-        height: 50px;
-        width: 50px;
-        font-size: 1.3rem;
-       
+
+    .box{
+        width: 70%;
     }
+    
     .box .title{
-        
-        font-size:1.2rem;
+        font-size:1.8rem;
         font-weight: bolder;
     }
     
 }
+
+@media (max-width:450px) {
+    
+    .box{
+        justify-content: center;
+    }
+
+    .box .title{
+        font-size: 1.1rem;
+    }
+
+    
+
+
+    
+}
+

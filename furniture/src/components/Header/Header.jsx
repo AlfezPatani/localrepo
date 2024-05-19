@@ -48,14 +48,9 @@ function Header() {
             {/*for mobiles*/}
                 <div className={style.itemContainer}>
                     {/*search btn*/}
-                    <NavLink to="/search" className={style.bar}>
+                    {/* <NavLink to="/search" className={style.bar}>
                         <i className={`fa-solid fa-magnifying-glass ${isScrollDown || location.pathname !== "/" ? style.fcolor : ""}`}></i>
-                    </NavLink>
-                    <LangSelector fcolor="" className={"bar"} isNull={true}/>
-                    {/*logo*/}
-                    <div className={style.logo}>
-                        <span>spark furniture</span>
-                    </div>
+                    </NavLink> */}
                     {/*hamburger button*/}
                     <div className={style.bar}>
                         <i
@@ -63,6 +58,12 @@ function Header() {
                             onClick={() => handleSliderChange(true)}
                         ></i>
                     </div>
+                    {/*logo*/}
+                    <div className={style.logo}>
+                        <span>narayanhari</span>
+                    </div>
+                    <LangSelector fcolor="" className={"bar"} isNull={true}/>
+                    
                 </div>
             {/*genral navbar items*/}
             <div className={style.headerItemCollaction}>

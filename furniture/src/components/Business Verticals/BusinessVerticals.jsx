@@ -12,7 +12,7 @@ function BusinessVertical() {
          <div className={style.Container}>
             {bussinessVerticalData[i18n.language].map((bv) => {
                 return (
-                    <div className={style.colunm}>
+                    <div className={style.colunm} key={bv.text}>
                         <bv.Icon className={style.icon} />
                         <p className={style.text}>{bv.text}</p>
                     </div>

@@ -40,7 +40,7 @@ function Slider() {
                 {
                     heroPosters[i18n.language].map((poster) => {
                         return (
-                            <SwiperSlide key={poster.tex}>
+                            <SwiperSlide key={poster.text}>
                                 <img src={poster.src} alt="" className={style.images} />
                                 <h2 className={style.heroText}>{poster.text}</h2>
                             </SwiperSlide>

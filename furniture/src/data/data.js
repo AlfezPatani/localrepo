@@ -5,8 +5,9 @@ import i3 from '../assets/images/198634.jpg'
 import {MdOutlineRoom,MdOutlineMapsHomeWork} from 'react-icons/md'
 import {LuSofa} from 'react-icons/lu'
 import {GiWindow} from 'react-icons/gi'
-import {FaUncharted} from 'react-icons/fa'
+import {FaUncharted,FaPhone} from 'react-icons/fa'
 import {IoBedOutline} from 'react-icons/io5'
+import {MdEmail} from 'react-icons/md'
 
 
 const roomFurniturePhoto = [
@@ -90,63 +91,39 @@ export const contact = {
   headeTitlehi:"संपर्क में रहो",
   en: [
     {
-      title: "Phone",
-      detail: [
-        {
-          line1: "personal phone number",
-          line2: 9999999999
-        }
-      ]
+      title: "Call Us",
+      Icon:FaPhone,
+      text:'+9180408988',
+      person:'akshay pipaliya'
     },
     {
-      title: "Email",
-      detail: [
-        {
-          line1: "personal Email Address",
-          line2: "akshaypipaliya1111@gmai.com",
-        }
-
-      ]
+      title: "Mail Us",
+      Icon:MdEmail,
+      text:'yoyo@gmail.com / aksahy@yahooo.com'
     }
   ],
   hi: [
     {
-      title: "फ़ोन",
-      detail: [
-        {
-          line1: "व्यक्तिगत फ़ोन नंबर",
-          line2: 9999999999
-        }
-      ]
+      title: "Call Us",
+      Icon:FaPhone,
+      text:'+9180408988'
     },
     {
-      title: "ईमेल",
-      detail: [
-        {
-          line1: "व्यक्तिगत ईमेल एड्रेस",
-          line2: "akshaypipaliya1111@gmai.com",
-        }
-      ]
+      title: "Mail Us",
+      Icon:MdEmail,
+      text:'yoyo@gmail.com /thisforaffrica@yahooo.com'
     }
   ],
   gu: [
     {
-      title: "ફોન",
-      detail: [
-        {
-          line1: "વ્યક્તિગત ફોન નંબર",
-          line2: 9999999999
-        }
-      ]
+      title: "Call Us",
+      Icon:FaPhone,
+      text:'+9180408988'
     },
     {
-      title: "ઈમેલ",
-      detail: [
-        {
-          line1: "વ્યક્તિગત ઇમેઇલ એડ્રેસ",
-          line2: "akshaypipaliya1111@gmai.com",
-        }
-      ]
+      title: "Mail Us",
+      Icon:MdEmail,
+      text:'yoyo@gmail.com /thisforaffrica@yahooo.com'
     }
   ]
 }

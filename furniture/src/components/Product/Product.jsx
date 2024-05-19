@@ -3,9 +3,10 @@ import {useTranslation} from 'react-i18next'
 
 function Product(){
     const {t,i18n}=useTranslation()
-    const a=useParams()
+    const params=useParams()
+    console.log(params);
     const product=t("allPhotos")
-    const targetedProduct=product.find((elem) => elem.key===a.key)
+    const targetedProduct=product.find((elem) => elem.key===params.key)
     return(
         <div style={{marginTop:"100px"}}>
             <>
