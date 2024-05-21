@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import './App.css'
 import {Home, RootLayout,Catagory,Error,Product} from './components/index.js'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+import QR from './components/QR/QR.jsx'
 
 function App() {
   
@@ -33,7 +34,10 @@ function App() {
         element:<Product/>,
         errorElement:<Error/>
       },
-      
+      {
+        path:"/QR",
+        element:<QR />
+      }      
 
     ]
   )

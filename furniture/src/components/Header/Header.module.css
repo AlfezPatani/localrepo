@@ -60,7 +60,7 @@ span {
     font-family: "Nothing You Could Do", cursive;
     font-weight: 800;
     font-style: normal;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-transform: capitalize;
 }
 
@@ -268,7 +268,7 @@ a {
     }
 
     .logo {
-        width: 150px;
+        width: 190px;
         margin: 0px;
 
     }
@@ -285,7 +285,7 @@ a {
     }
 
     .logo {
-        width: 150px;
+        width: 190px;
         height: 100%;
 
     }

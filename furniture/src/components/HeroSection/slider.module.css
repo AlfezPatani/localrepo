@@ -17,8 +17,8 @@
 
 .images{
     width: 100%;
-    min-height: 75vh;
-    max-height: 75vh;
+    min-height: 85vh;
+    max-height: 85vh;
     object-fit: cover;
 }
 

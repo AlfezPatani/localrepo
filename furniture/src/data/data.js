@@ -135,79 +135,67 @@ export const bussinessVertical={
   en:[
     {
       text:'Room Furniture',
-      Icon:MdOutlineRoom,
+      Icon:GiWindow,
     },
     {
       text:'sofa',
       Icon:LuSofa
     },
     {
-      text:'Windows',
-      Icon:GiWindow
-    },
-    {
       text:'home furniture',
       Icon:MdOutlineMapsHomeWork
     },
     {
-      text:'wooden arts',
-      Icon:FaUncharted
-    },
-    {
       text:'beds',
       Icon:IoBedOutline
+    }, 
+    {
+      text:'All wooden arts',
+      Icon:FaUncharted
     }
   ],
   hi:[
     {
       text:'Room Furniture',
-      Icon:MdOutlineRoom,
+      Icon:GiWindow,
     },
     {
       text:'sofa',
       Icon:LuSofa
     },
     {
-      text:'Windows',
-      Icon:GiWindow
-    },
-    {
       text:'home furniture',
       Icon:MdOutlineMapsHomeWork
     },
     {
-      text:'wooden arts',
-      Icon:FaUncharted
-    },
-    {
       text:'beds',
       Icon:IoBedOutline
+    }, 
+    {
+      text:'wooden arts',
+      Icon:FaUncharted
     }
   ],
   gu:[
     {
       text:'Room Furniture',
-      Icon:MdOutlineRoom,
+      Icon:GiWindow,
     },
     {
       text:'sofa',
       Icon:LuSofa
     },
     {
-      text:'Windows',
-      Icon:GiWindow
-    },
-    {
       text:'home furniture',
       Icon:MdOutlineMapsHomeWork
     },
     {
-      text:'wooden arts',
-      Icon:FaUncharted
-    },
-    {
       text:'beds',
       Icon:IoBedOutline
+    }, 
+    {
+      text:' All wooden arts',
+      Icon:FaUncharted
     }
   ],
   

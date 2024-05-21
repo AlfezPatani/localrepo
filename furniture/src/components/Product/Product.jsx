@@ -13,7 +13,7 @@ function Product(){
             <button onClick={() => {
                 window.location.href=`https://wa.me/${8160221309}`
             }}>click</button>
-            {targetedProduct?targetedProduct?.detail?.map((elem) =><img key={elem} src={elem} />):<h1> sorry coulden't product found</h1>}
+            {targetedProduct?targetedProduct?.detail?.map((elem) =><img style={{backgroundSize:"cover",width:"100%"}} key={elem} src={elem} />):<h1> sorry coulden't product found</h1>}
             </>
             
         </div>
