@@ -1,6 +1,8 @@
 import i1 from '../assets/images/123861.jpg'
 import i2 from '../assets/images/123862.jpg'
 import i3 from '../assets/images/198634.jpg'
+import i4 from '../assets/images/mango.jpeg'
+import i5 from '../assets/images/door.jpeg'
 //icons
 import {MdOutlineRoom,MdOutlineMapsHomeWork} from 'react-icons/md'
 import {LuSofa} from 'react-icons/lu'
@@ -93,8 +95,8 @@ export const contact = {
     {
       title: "Call Us",
       Icon:FaPhone,
-      text:'+9180408988',
-      person:'akshay pipaliya'
+      text:'+919875055350',
+      person:'Akshay pipaliya'
     },
     {
       title: "Mail Us",
@@ -202,7 +204,6 @@ export const bussinessVertical={
 }
 
 
-
 export const allPhotos = [
   {
     en: "furniture",
@@ -210,7 +211,7 @@ export const allPhotos = [
     hi: "prgfg",
     gu: "ssmama",
     detail: [
-      i1, i2, i3
+      i1, i2, i3,i4,i5
     ]
 
   }

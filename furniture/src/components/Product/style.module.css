@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.Container{
+}
+.FullImage{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(23, 22, 22, 0.886);
+}
+
+.FullImage img{
+    width: 90vw;
+    object-fit: cover;
+    background-color: rgb(255, 255, 255);
+}
+
+.Hide{
+    display: none;
+}
+
+.ProducImage{
+    width: 100%;
+
+}

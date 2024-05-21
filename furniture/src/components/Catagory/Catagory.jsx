@@ -13,7 +13,8 @@ import style from './catagory.module.css'
 import { NavLink } from 'react-router-dom';
 
 // import required modules
-import { Keyboard, Pagination, Navigation } from 'swiper/modules';
+import { Keyboard, Pagination, Navigation,Autoplay} from 'swiper/modules';
+
 
 
 function Catagory() {
@@ -27,10 +28,15 @@ function Catagory() {
                     <div key={new Date().getDate() + Math.random()} className={style.container}>
                         <h2 className={style.title}>{ele[i18n.language]}</h2>
                         <Swiper
-                            modules={[Keyboard, Pagination, Navigation]}
+                            modules={[Keyboard, Pagination, Navigation,Autoplay]}
                             // navigation={true}
                             slidesPerView={1}
                             spaceBetween={10}
+                            loop={true}
+                            autoplay={{
+                                delay: 3000,
+                                disableOnInteraction: false
+                            }}
                             keyboard={{
                                 enabled: true,
                             }}
@@ -63,11 +69,11 @@ function Catagory() {
                             className="mySwiper"
                         >
 
-                            {ele?.detail.map((image,index) => {
+                            {ele?.detail.map((image, index) => {
                                 return (
-                                    index<=5?<SwiperSlide key={image + Math.random()} className={style.card}>
-                                    <img src={image} />
-                                </SwiperSlide>:""
+                                    index <= 5 ? <SwiperSlide key={image + Math.random()} className={style.card}>
+                                        <img src={image} />
+                                    </SwiperSlide> : ""
                                 )
                             })}
 

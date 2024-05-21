@@ -13,48 +13,19 @@ function Contact() {
                 {contactData[i18n.language].map((elem) => {
                     return (
                         <div className={style.box} key={elem.title}>
+                            
+                            <h3 className={style.title}>
+                                {elem?.title}
+                            </h3>
+                            {elem.person ? <div className={style.person}>{elem.person}</div> : ''}
+                            <div className={style.main}>
+                                {elem.text}
+                            </div>
 
-                            
-                                <h3 className={style.title}>
-                                    {elem?.title}
-                                </h3>
-                                {elem.person?<div className={style.person}>{elem.person}</div>:''}
-                                <div className={style.main}>
-                                    {elem.text}
-                                </div>
-                            
 
                         </div>
                     )
                 })}
-                {/* <div className={style.box}>
-
-                    <div className={style.icon}>
-                        <i className="fa-solid fa-phone"></i>
-                    </div>
-                    <h3 className={style.title}>
-                        Phone
-                    </h3>
-                    <div className={style.main}>
-                        <p className={style.line1}>kothariya solvent rajkot</p>
-                        <p className={style.line2}>street no. 108 ,12gr</p>
-                    </div>
-
-                </div>
-                <div className={style.box}>
-
-                    <div className={style.icon}>
-                        <i className="fa-regular fa-envelope"></i>
-                    </div>
-                    <h3 className={style.title}>
-                        Email
-                    </h3>
-                    <div className={style.main}>
-                        <p className={style.line1}>kothariya solvent rajkot</p>
-                        <p className={style.line2}>street no. 108 ,12gr</p>
-                    </div>
-
-                </div> */}
             </div>
         </div>
     )

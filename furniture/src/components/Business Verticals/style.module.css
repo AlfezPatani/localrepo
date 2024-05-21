@@ -9,7 +9,7 @@
 .heading{
     color:#273043;
     margin: 10px 0px 20px 0px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     font-family: var(--afacad);
 }
@@ -67,6 +67,7 @@
     text-align: center;
     color: #121110;
     font-family: var(--afacad);
+    font-size: 2rem;
 }
 
 
