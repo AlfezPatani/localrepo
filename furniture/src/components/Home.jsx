@@ -1,12 +1,14 @@
-import {BusinessVertical,OurServices, Contact,Slider} from './index'
+import { BusinessVertical, OurServices, Contact, Slider } from './index'
 
-function Home(){
-    return(
+function Home() {
+
+    return (
         <>
-        <Slider/>
-        <Contact/>
-        <BusinessVertical/>
-        <OurServices/> 
+            <Slider />
+            <Contact />
+            <BusinessVertical />
+            <OurServices />
+            
         </>
     )
 }

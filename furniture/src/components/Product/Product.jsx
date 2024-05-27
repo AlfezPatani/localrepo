@@ -12,8 +12,7 @@ function Product() {
     const product = t("allPhotos")
     const targetedProduct = product.find((elem) => elem.key === params.key)
     return (
-        <div style={{ marginTop: "100px" }}>
-            <div className={style.Container}>
+        <div className={style.Container}>
                 {targetedProduct ? targetedProduct?.detail?.map((elem) => {
                     return (
                         <img
@@ -33,8 +32,6 @@ function Product() {
                     <img src={`${selectedImage ? selectedImage : ''}`} />
                 </div>
             </div>
-
-        </div>
     )
 }
 export default Product

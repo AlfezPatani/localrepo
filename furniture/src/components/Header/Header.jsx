@@ -9,7 +9,8 @@ import { NavLink, useLocation } from 'react-router-dom'
 function Header() {
 
     {/*---hooks----*/ }
-    const location = useLocation()
+    const location = useLocation();
+    console.log(location);
     const { t } = useTranslation()
     const headerLinks = t("header")
     const [isScrollDown, setIsScrollDwon] = useState(false)
@@ -61,6 +62,7 @@ function Header() {
                     {/*logo*/}
                     <div className={style.logo}>
                         <span>narayanhari</span>
+                       {location.pathname==='/search'? <p className={style.slogan}>Build Quality</p>:''}
                     </div>
                     <LangSelector fcolor="" className={"bar"} isNull={true}/>
                     

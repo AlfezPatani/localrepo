@@ -10,6 +10,7 @@ import {GiWindow} from 'react-icons/gi'
 import {FaUncharted,FaPhone} from 'react-icons/fa'
 import {IoBedOutline} from 'react-icons/io5'
 import {MdEmail} from 'react-icons/md'
+import { IoLogoWhatsapp } from "react-icons/io";
 
 
 const roomFurniturePhoto = [
@@ -94,13 +95,11 @@ export const contact = {
   en: [
     {
       title: "Call Us",
-      Icon:FaPhone,
       text:'+919875055350',
       person:'Akshay pipaliya'
     },
     {
       title: "Mail Us",
-      Icon:MdEmail,
       text:'yoyo@gmail.com / aksahy@yahooo.com'
     }
   ],

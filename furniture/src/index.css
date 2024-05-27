@@ -14,3 +14,51 @@
 button {
     margin: 0px 10px;
 }
+
+.Direct-Contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    gap: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    left: 20px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+ .WA{
+    color: rgb(19, 165, 19);
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    background-color:white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    cursor: pointer;
+} .WA svg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+ .Contact{
+    color: rgb(34, 61, 80);
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    background-color:white;
+    height: 15px;
+    width: 15px;
+    position: relative;
+
+}
+
+ .Contact svg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
