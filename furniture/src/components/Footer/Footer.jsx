@@ -6,6 +6,13 @@ function Footer(){
         
 
     return(
+        <>
+        <article className={style.special}>
+            51 + Year Work Experience
+        </article>
+        <article className={style.special}>
+            11000 + Happy Customer
+        </article>
         <footer>
             <h2>{footerData.headline}</h2>
             <div className={style.social}>
@@ -14,6 +21,7 @@ function Footer(){
             </div>
             <p>{footerData.copyright}</p>
         </footer>
+        </>
     )
 }
 
