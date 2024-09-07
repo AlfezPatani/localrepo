@@ -17,11 +17,22 @@ function Contact() {
                             <h3 className={style.title}>
                                 {elem?.title}
                             </h3>
-                            {elem.person ? <div className={style.person}>{elem.person}</div> : ''}
+                            {/* {elem.person ? <div className={style.person}>{elem.person}</div> : ''}
                             {elem.Icon?<div><elem.Icon/></div>:''}
                             <div className={style.main}>
                                 {elem.text}
-                            </div>
+                            </div> */}
+                            {elem.data ? elem.data.map((detail) => {
+                                return (
+                                    <>
+                                        <div className={style.person}>{detail.person ?detail.person :''}</div>
+                                        {detail.Icon ? <div><elem.Icon /></div> : ''}
+                                        <div className={style.main}>
+                                            {detail.text}
+                                        </div>
+                                    </>
+                                )
+                            }) : ''}
 
 
                         </div>

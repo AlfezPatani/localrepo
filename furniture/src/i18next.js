@@ -10,8 +10,7 @@ i8next.use(initReactI18next).init({
            translation:{
             header:[
                 {item:"Home",path:"/"},
-                {item:"contact",path:"contact"},
-                {item:"FAQS",path:"FAQS"},
+                {item:"Our Projects",path:"/search"},
                 
             ],
             footer:{

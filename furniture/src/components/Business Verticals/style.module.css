@@ -1,3 +1,9 @@
+.ContainerWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .Container{
     width: 100vw;
     display: grid;
@@ -8,10 +14,23 @@
 }
 .heading{
     color:#273043;
+    width: fit-content;
+    text-transform: capitalize;
     margin: 10px 0px 20px 0px;
     font-size: 2rem;
     text-align: center;
     font-family: var(--afacad);
+    position: relative;
+}
+.heading::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    background-color:var(--text-color);
 }
 
 .colunm{

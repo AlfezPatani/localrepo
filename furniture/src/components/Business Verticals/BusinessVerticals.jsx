@@ -7,7 +7,7 @@ function BusinessVertical() {
     
 
     return (
-       <div>
+       <div className={style.ContainerWrapper}>
          <h2 className={style.heading}>{bussinessVerticalData["headeTitle"+i18n.language]}</h2>
          <div className={style.Container}>
             {bussinessVerticalData[i18n.language].map((bv) => {
